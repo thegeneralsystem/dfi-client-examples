@@ -1,0 +1,41 @@
+{
+  "name": "bus-explorer",
+  "description": "A web application to show a map of recent bus locations and journeys in London",
+  "version": "1.0.0",
+  "author": "Dale <dale.webb@excession.co>",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "start": "envful -- vite --open",
+    "build": "envful -- vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.9",
+    "@tanstack/react-query": "^4.12.0",
+    "@turf/bbox": "^6.5.0",
+    "dfi-utils": "*",
+    "envful": "1.0.7",
+    "mapbox-gl": "^2.10.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-map-gl": "^7.0.19",
+    "react-router-dom": "6.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.20",
+    "@types/react-dom": "18.0.6",
+    "@vitejs/plugin-react": "2.1.0",
+    "msw": "^0.47.4",
+    "vite": "3.1.1",
+    "vite-plugin-checker": "0.5.1",
+    "vite-tsconfig-paths": "3.5.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}

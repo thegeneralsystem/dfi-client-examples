@@ -1,0 +1,18 @@
+{
+  "name": "dfi-utils",
+  "version": "1.0.0",
+  "description": "Helper functions for the example apps",
+  "author": "Dale <dale.webb@excession.co>",
+  "license": "ISC",
+  "exports": "./index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "node-fetch": "2.6.7"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "2.6.2"
+  }
+}

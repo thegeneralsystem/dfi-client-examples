@@ -1,0 +1,20 @@
+{
+  "name": "taxi2dfi",
+  "version": "1.0.0",
+  "description": "Taxi2DFI is a tool for converting taxi data to DFI format.",
+  "author": "Dale <dale.webb@excession.co>",
+  "license": "ISC",
+  "scripts": {
+    "start": "node --loader ts-node/esm ./main",
+    "dev": "node --loader ts-node/esm ./main -- --dfi-url='https://dfi-api.excession.localdev'",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "commander": "^9.4.1",
+    "csv-stringify": "^6.2.0",
+    "dfi-utils": "*",
+    "ora": "^5.4.1",
+    "ts-node": "^10.9.1"
+  }
+}
